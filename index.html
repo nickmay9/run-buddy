@@ -20,7 +20,38 @@
         </header>
 
         <!--Hero Jumbotron-->
-        <section></section>
+        <section>
+            <div> <!--Creating the running form div-->
+                <h3>Get Started Today!</h3>
+                <p>Fill out this form and one of our trainers will schedule a consult.</p>
+                <form> <!--Running Form-->
+                    <label for="name">Enter full name:</label><br />
+                    <input type="text" placeholder="Your Name" name="name" id="name"/><br />
+
+                    <label for="email">Enter email address:</label><br />
+                    <input type="email" placeholder="Email Address" name="email" id="email"/><br />
+
+                    <label for="phoneNumber">Enter a telephone number:</label><br />
+                    <input type="tel" placeholder="Phone Number" name="phoneNumber" id="phoneNumber"/>
+
+                    <p>
+                        Have you worked out with a trainer before?
+                        <input type="radio" id="yes" name="trainer-confirm">
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="no" name="trainer-confirm">
+                        <label for="no">No</label>
+                    </p>
+
+                    <p>
+                        <label for="confirmAge">I acknowledge that I am at least 18 years of age.</label>
+                        <input type="checkbox" id="checkbox" name="confirmAge">
+                    </p>
+
+                    <button type="submit">Get Running</button>
+
+                </form> <!--Ending running form-->
+            </div> <!--Ending running form div-->
+        </section> <!--End Hero Section-->
 
         <!--What we do-->
         <section id="whatWeDo">
