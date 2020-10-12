@@ -9,6 +9,7 @@ body {
     box-sizing: border-box;
 }
 
+/*begin header*/
 header {
     padding: 20px 35px;
     background-color: #39a6b2;
@@ -41,7 +42,9 @@ header nav ul li a {
     font-weight: lighter;
     font-size: 22px;
 }
+/*end header*/
 
+/*begin footer*/
 footer {
     background: #fce138;
     width: 100%;
@@ -64,11 +67,13 @@ footer div {
 footer a {
     color: #024e76;
 }
+/*end footer*/
 
 section {
     padding: 60px;
 }
 
+/*begin hero*/
 .hero {
     background-image: url("./assets/images/hero-bg.jpg");
     height: 600px;
@@ -118,6 +123,7 @@ section {
     padding: 10px 20px;
     font-size: 16px;
 }
+/*end hero*/
 
 .intro {
     text-align: center;
