@@ -469,6 +469,30 @@ section {
     .step-text {
         flex: 100%;
     }
+
+    .service-grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(auto, 1fr);
+    }
+        
+    .service-grid-item.basic {
+        grid-column: 1;
+    }
+    
+    .service-grid-item.premium {
+        grid-column: 2;
+    }
+    
+    .service-grid-item.both {
+        grid-column: 1/ -1;
+    }
+    
+    .service-grid-item.cancel {
+        writing-mode: unset;
+        transform: none;
+        grid-column: 1/ -1;
+        grid-row: -1;
+    }
 }
 
 /*Media Query for mobile phones and smaller */
