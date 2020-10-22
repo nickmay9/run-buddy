@@ -363,6 +363,7 @@ section {
     padding: 15px;
     align-items: flex-end;
     position: relative;
+    overflow: auto;
 }
 
 .trainer-img::after {
@@ -371,8 +372,14 @@ section {
     width: 100%;
     background: linear-gradient(rgba(252, 225, 56, 0.3), var(--secondary-color));
     position: absolute;
-    top: 0;
+    top: 0px;
     left: 0;
+    opacity: 0;
+    transition-duration: 2s;
+}
+
+.trainer:hover .trainer-img:after {
+    opacity: 1;
 }
 
 .trainer-img h3 {
@@ -380,6 +387,8 @@ section {
     z-index: 1;
     font-size: 28px;
     margin-bottom: 5px;
+    top: 200px;
+    transition-duration: 0.6s;
 }
 
 .trainer-img h4 {
@@ -388,6 +397,13 @@ section {
     font-size: 22px;
     font-weight: lighter;
     margin-bottom: 15px;
+    top: 200px;
+    transition-duration: 0.6s;
+    transition-delay: 0.2s;
+}
+
+.trainer:hover .trainer-img h3, .trainer:hover .trainer-img h4 {
+    top: 0;
 }
 
 .trainer-bio {
